@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>style</title>
+
+        <link
+            rel="preload"
+            as="fetch"
+            href="/src/custom-element/x-button/x-button.css"
+            crossorigin="anonymous"
+        />
+
+        <script
+            type="module"
+            src="/src/custom-element/registerCustomElements.js"
+        ></script>
+
+        <script type="module" src="app.js"></script>
+    </head>
+    <body>
+        <x-grid>
+            <x-button></x-button>
+            <x-button></x-button>
+            <x-button></x-button>
+        </x-grid>
+    </body>
+</html>
